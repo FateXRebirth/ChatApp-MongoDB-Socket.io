@@ -1,0 +1,26 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "Chat Application Using MongoDB and Socket.io",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FateXRebirth/ChatApp-MongoDB-Socket.io.git"
+  },
+  "keywords": [
+    "Socket.io"
+  ],
+  "author": "FateXRebirth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FateXRebirth/ChatApp-MongoDB-Socket.io/issues"
+  },
+  "homepage": "https://github.com/FateXRebirth/ChatApp-MongoDB-Socket.io#readme",
+  "dependencies": {
+    "mongodb": "^3.1.1",
+    "socket.io": "^2.1.1"
+  }
+}
