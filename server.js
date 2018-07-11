@@ -8,17 +8,18 @@ const url = 'mongodb://localhost:27017';
 const dbName = 'mongochat';
 
 // Connect to mongo
-mongo.connect('mongodb://127.0.0.1/mongochat', function(err, db){
+mongo.connect(url, function(err, instance){
     if(err){
         throw err;
     }
 
     console.log('MongoDB connected...');
-
+    const db = instance.db(dbName);
     // Connect to Socket.io
     client.on('connection', function(socket){
+    
         let chat = db.collection('chats');
-
+        
         // Create function to send status
         sendStatus = function(s){
             socket.emit('status', s);
